@@ -27,6 +27,7 @@ body {
 @media (min-width: 1024px) {
  .clip-logo{
     clip-path: polygon(0 0, 85% 0, 99% 100%, 0% 100%);
+    
   }
   
 }
@@ -34,4 +35,7 @@ body {
     .clip-footer{
     clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
   }
+}
+.hr{
+  @apply mr-2 text-gray-400 my-10
 }
