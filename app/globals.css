@@ -23,6 +23,7 @@ body {
   background: #ffffff;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+
 }
 @media (min-width: 1024px) {
  .clip-logo{
@@ -38,4 +39,15 @@ body {
 }
 .hr{
   @apply mr-2 text-gray-400 my-10
+}
+
+.text-gradient-clip {
+
+  /* 1. Recorta o background para que ele apareça apenas onde o texto está */
+   -webkit-background-clip: text;
+   background-clip: text;
+
+  /* 2. Torna o texto transparente para revelar o background */
+  -webkit-text-fill-color: transparent;
+   color: transparent; 
 }
