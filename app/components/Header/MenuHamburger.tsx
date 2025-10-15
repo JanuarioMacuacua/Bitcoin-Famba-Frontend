@@ -1,6 +1,5 @@
 'use client'
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
 import { House, Info, Phone, X, Menu, Bitcoin, Equal } from 'lucide-react';
 import { CalendarFold } from 'lucide-react';
 
@@ -23,30 +22,29 @@ export default function MenuHamburger() {
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }} className=" p-2 lg:hidden " onClick={Alteracao}>
 
           {aberto ?
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }} animate={{ rotate: 90 }} > <X className="size-[25px]"/> </motion.div>
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }} animate={{ rotate: 90 }} > <X className="size-[25px]" /> </motion.div>
             :
-            <Equal className="size-[30px]"/>}
+            <Equal className="size-[30px]" />}
 
 
         </motion.div>
 
-        {aberto ? <motion.div exit={{ opacity: 0 }} className="bg-gray-950 absolute rounded-lg flex-col justify-center top-18 w-10  lg:hidden ">
-          <div className="ml-2 py-10">
-            <House />
+        {aberto ? <motion.div exit={{ opacity: 0 }} className="bg-gray-950 absolute rounded-lg flex-col ml-[-110px] top-18 w-40  lg:hidden ">
+          
+          <div className="py-10 text-gray-400 items-right">
+            <span className="flex  justify-around items-center"><p>Home</p><House className=" text-gray-200 right-0"/></span>
             <hr className="hr" />
-            <Info />
+            <span className="flex  justify-around items-center"><p>Informacoes</p><Info className=" text-gray-200 right-0"/></span>
             <hr className="hr" />
-            <CalendarFold />
+            <span className="flex  justify-around items-center"><p>Eventos</p><CalendarFold className=" text-gray-200"/></span>
             <hr className="hr" />
-            <Phone />
-             <hr className="hr" />
-               
-               <Bitcoin className="{/*text-gradient-clip */} "/>
-             
-        
+            <span className="flex  justify-around items-center"><p>Contactar</p><Phone className=" text-gray-200"/></span>
+              <hr className="hr" />
+            <span className="flex  justify-around items-center"><p>Participar</p><Bitcoin className=" text-gray-200"/></span>
 
           </div>
 
+          
 
         </motion.div> : null}
 
