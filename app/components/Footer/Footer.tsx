@@ -2,7 +2,7 @@ import React from 'react'
 import FooterCount from './FooterCount'
 export default function Footer() {
     return (
-        <footer className='w-screen flex flex-row items-center justify-center '>
+        <footer className='w-screen flex flex-row items-center justify-center'>
             <div className='clip-footer  w-[calc(100%-10%)] md:bg-gray-950 flex justify-around text-yellow-600 '>
                 <div className='text-center'>
                     <FooterCount alvo={800} velocidade={10}/>
