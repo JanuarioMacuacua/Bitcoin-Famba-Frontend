@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -25,7 +27,10 @@ body {
   background: #ffffff;
   color: var(--foreground);
   font-family:var(--font-jersey-10), Arial, Helvetica, sans-serif;
-
+    letter-spacing: 1px;
+}
+body{
+  @apply bg-gradient-to-bl from-black to-orange-500
 }
 
 @media (min-width: 1024px) {
@@ -62,12 +67,13 @@ body {
 }
 
 .HeaderC{
-  @apply bg-gray-950  rounded-4xl m-2  mx-5
+  @apply bg-black  rounded-3xl m-2  mx-3
   fixed 
   top-0 right-0 left-0 
   z-50 
   text-center text-3xl lg:bg-gray-50  p-3  lg:p-5  lg:text-black 
 }
 .HeaderShadow{
-  box-shadow: 0px 5px 8px gray;
+  box-shadow: 0px 3px 5px gray;
+
 }

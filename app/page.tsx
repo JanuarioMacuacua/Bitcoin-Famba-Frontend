@@ -13,8 +13,8 @@ export default function Home() {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setFadeOut(true), 2000);
-    const finish = setTimeout(() => setLoading(false), 2500);
+    const timer = setTimeout(() => setFadeOut(true), 0);
+    const finish = setTimeout(() => setLoading(false), 0);
 
     return () => {
       clearTimeout(timer);

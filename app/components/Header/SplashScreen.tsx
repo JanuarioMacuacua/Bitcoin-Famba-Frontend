@@ -1,3 +1,6 @@
+import { Bitcoin } from "lucide-react";
+import { motion } from "motion/react"
+
 interface SplashScreenProps {
   fadeOut: boolean;
 }
@@ -5,13 +8,19 @@ interface SplashScreenProps {
 export default function SplashScreen({ fadeOut }: SplashScreenProps) {
   return (
     <div
-      className={`fixed inset-0 flex flex-col items-center justify-center bg-black text-white z-50 transition-opacity duration-300 
-        ${
-        fadeOut ? "opacity-0" : "opacity-100"
-      }`}
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-orange-500 to-black text-white z-50 transition-opacity duration-300 
+        ${fadeOut ? "opacity-0" : "opacity-100"}`}
     >
-      <div className="text-4xl font-bold animate-pulse">Logo</div>
-      <div className="mt-4 w-10 h-10 border-4 border-t-transparent border-white  animate-bounce"></div>
+      <div className="text-4xl font-bold animate-pulse">
+      <motion.div initial={{ scale: 0 }} 
+      animate={{ scale: 30 ,
+       transition:{duration :3.5 ,
+       } 
+       }} >
+           <Bitcoin className=" text-gray-300 " />
+      </motion.div>
+
+      </div>
     </div>
   );
 }
