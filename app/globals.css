@@ -29,9 +29,9 @@ body {
   font-family:var(--font-jersey-10), Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
 }
-body{
+/* body{
   @apply bg-gradient-to-bl from-black to-orange-400
-}
+} */
 
 @media (min-width: 1024px) {
   .clip-logo {

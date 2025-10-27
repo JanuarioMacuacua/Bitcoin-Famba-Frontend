@@ -50,7 +50,7 @@ export default function ButtonTwo() {
                 <button className="bg-orange-600 btnUp hover:bg-orange-700 text-white px-2 py-1 rounded-md w-full text-lg">
                     Tornar-se membro
                 </button>
-                <button className="border-1 border-white hover:border-gray-400 text-black px-6 py-3 rounded-md w-full text-lg">
+                <button className="border-1 border-gray-400 hover:border-black text-black px-6 py-3 rounded-md w-full text-lg">
                     Nossa missão 
                 </button>
             </motion.div>
