@@ -48,7 +48,7 @@ export default function Slogan() {
       }}    
       
       >
-        <div className="text-left text-2xl my-5">
+        <div className="text-left text-2xl text-gray-100 my-5">
         Empoderando comunidades em Moçambique através da educação Bitcoin,
         construção de economia circular e narrativas culturais. "Famba"
         significa "caminhar" em Changana - e nossa jornada é rumo à autonomia

@@ -13,16 +13,14 @@ export default function Header() {
       
     >
       
-      <div className=" shadow my-20 ">
+      <div className=" shadow my-25 ">
     
         <div className=" w-[calc(100%-10%)] text-white items-center ">
 
           <div className="HeaderC clip-logo HeaderShadow items-center justify-center flex flex-row">
           <div className="items-center flex">
               <Bitcoin className="text-orange-500 size-10 z-2 " />
-    
             </div>
-     
           </div>
       
           <div>

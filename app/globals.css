@@ -30,7 +30,7 @@ body {
     letter-spacing: 1px;
 }
 body{
-  @apply bg-gradient-to-bl from-black to-orange-500
+  @apply bg-gradient-to-bl from-black to-orange-400
 }
 
 @media (min-width: 1024px) {

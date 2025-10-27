@@ -1,14 +1,14 @@
 import { Bitcoin } from "lucide-react";
 import { motion } from "motion/react"
 
-interface SplashScreenProps {
+interface Props {
   fadeOut: boolean;
 }
 
-export default function SplashScreen({ fadeOut }: SplashScreenProps) {
+export default function SplashScreen({ fadeOut }: Props) {
   return (
     <div
-      className={`fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-orange-500 to-black text-white z-50 transition-opacity duration-300 
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-black text-white z-50 transition-opacity duration-300 
         ${fadeOut ? "opacity-0" : "opacity-100"}`}
     >
       <div className="text-4xl font-bold animate-pulse">
