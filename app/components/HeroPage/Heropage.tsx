@@ -6,7 +6,7 @@ import ButtonTwo from './ButtonsTwo'
 
 export default function Heropage() {
     return (
-        <div className=' mx-3 p-2 h-full my-10 rounded-lg'> 
+        <div className='lg:mx-20 md:mx-20 mx-3 p-2 h-full my-10 rounded-lg'> 
          <Button/>
          <Slogan/>
          <ButtonTwo/>

@@ -18,7 +18,7 @@ export default function ButtonTwo() {
                 animate={{
                     width:"70%", 
                     opacity:1, 
-                    padding:20,
+                    padding:15,
         
                 }}
                 transition={{
@@ -45,12 +45,12 @@ export default function ButtonTwo() {
                 }}
 
                 
-                className="flex flex-col items-center gap-3 mt-8 w-full max-w-sm px-4">
+                className=" flex flex-col md:flex-row lg:flex-row items-center gap-3 mt-8 md:mt-1 w-full max-w-sm px-4">
                 
-                <button className="bg-orange-600 btnUp hover:bg-orange-700 text-white px-2 py-1 rounded-md w-full text-lg">
+                <button className= "md:px-6 md:py-0 bg-orange-600 btnUp hover:bg-orange-700 text-white px-2 py-1 rounded-md w-full text-lg">
                     Tornar-se membro
                 </button>
-                <button className="border-1 border-gray-400 hover:border-black text-black px-6 py-3 rounded-md w-full text-lg">
+                <button className="border-1 border-black hover:border-gray-400  text-black px-6 py-3 rounded-md w-full  text-lg">
                     Nossa missão 
                 </button>
             </motion.div>
